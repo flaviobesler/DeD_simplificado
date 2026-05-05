@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>criação de personagem</title>
+        <style>
+                body{
+                        font-family: 'inter', sans-serif;
+                        background-color: #111;
+                        color: white;
+                }
+
+                .geral{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                }
+
+                .conteiner{
+                        display: flex;
+                        gap: 20px;
+                }
+                .raca, .classe, .salvar {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        align-items: center;
+                }
+                #span_raca{
+                        width: 400px;
+                        height: 600px;
+                        display: block;
+
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+
+                }
+                .genero{
+                        gap: 10px;
+                        margin-bottom: 10px;
+                }
+                .selecionado{
+                        transform: scale(1.05);
+                        border: 2px solid gold;
+                        box-shadow: 0 0 10px gold;
+                }
+                .raca button,
+                .classe button
+                {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 5px;
+
+                        cursor: pointer;
+
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+ 
+                        border: 1px solid white;
+                }
+                .genero button,
+                .salvar button{
+                                                width: 100px;
+                        width: 100px;
+                        height: 25px;
+                        border-radius: 5px;
+
+                        cursor: pointer;
+
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+ 
+                        border: 1px solid white;
+                }
+
+                @media (min-width: 768px) {
+                        .conteiner_descricao{
+                        display: flex;
+                        align-items: center;
+                        vertical-align: baseline;
+                }
+                        
+                }
+
+        </style>
+
+</head>
+<body>  
+        <div class="conteiner_descricao">
+
+                
+                <div class="geral">
+                        <h2>criação de personagem</h2>
+                        <div class="genero">
+                                <button id="male">masculino</button>
+                                <button id="female">feminino</button>
+                        </div>
+                        <div class="conteiner">
+                                <span id="span"></span>
+                                <div class="raca">
+                                        <button data-raca="humano"></button>
+                                        <button data-raca="elfo"></button>
+                                        <button data-raca="anao"></button>
+                                        <button data-raca="dragonato"></button>
+                                        <button data-raca="gnomo"></button>
+                                </div>
+                                <div class="classe">
+                                        <button data-classe="guerreiro">guerreiro</button>
+                                        <button data-classe="clerigo">clerigo</button>
+                                        <button data-classe="ladino">ladino</button>
+                                        <button data-classe="barbaro">barbaro</button>
+                                        <button data-classe="mago">mago</button>
+                                </div>
+                        </div>
+                        <div class="salvar">
+                                <p>nome</p>
+                                <input type="text">
+                                <button id="criar">criar</button>
+                        </div>
+                </div>
+                <div id="span_raca"></div>
+
+        </div>
+        <script src="js/criacao.js"></script>
+        <script src="js/InsertSupabase.js" type="module" defer></script>
+</body>
+</html>
