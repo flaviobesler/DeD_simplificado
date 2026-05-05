@@ -5,14 +5,15 @@ visualizarem com mais facilidade seus personagens nas campanhas.
 ---------------------------------------------
 
 #O que ha neste projeto?
-
-por parte dos players
+----------------
+por parte dos players: 
 criação de personagens,
 gerenciamento de mana, vida, ataques e xp (experiencia).
-
-por parte do mestre:
+----------------
+por parte do mestre: 
 criação simplificada de inimigos com informações pré configuradas,
 gerenciamento de combate e distribuição de itens e xp.
-
 ---------------------------
 os assets deste gerenciador foram criados usando o chat gpt, para melhor um pouco a experiencia do jogadores.
+----------------
+este gerenciador está sendo hospedado na vercel e supabase
